@@ -1,0 +1,48 @@
+footer {
+  background-color: #0d0909;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.4s ease-in-out;
+
+    @media screen and (max-width: 375px) {
+      margin-bottom: 1rem;
+    }
+
+    &:hover {
+      color: #e31837;
+    }
+  }
+
+  .icon {
+    color: #fff;
+    margin: 0 1rem;
+    font-size: 1.4rem;
+    transition: color 0.4s ease;
+  }
+
+  .red {
+    &:hover {
+      color: #e31837;
+    }
+  }
+
+  .yellow {
+    &:hover {
+      color: #fdc501;
+    }
+  }
+}
